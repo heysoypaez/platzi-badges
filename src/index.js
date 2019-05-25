@@ -1,7 +1,17 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
 
-const container = document.getElementById('app');
+/*
+const $element = document.createElement("h2");
 
-const element = <h1>Hello, Platzi Badges</h1>;
-ReactDOM.render(element, container);
+$element.innerHTML = "Platzi Badges is here";
+
+$container.appendChild($element)
+
+*/
+
+import React from "react";
+import ReactDOM from "react-dom";
+
+const Element = <h2>Hello! Platzi Badges</h2>
+const app = document.getElementById('app');
+
+ReactDOM.render( Element , app )
