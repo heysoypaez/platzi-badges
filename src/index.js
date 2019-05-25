@@ -10,8 +10,10 @@ $container.appendChild($element)
 
 import React from "react";
 import ReactDOM from "react-dom";
+import Badge from "./components/Badge.js"
 
-const Element = <h2>Hello! Platzi Badges</h2>
+//import "boostrap/dist/css/boostrap.css"; error
+
 const app = document.getElementById('app');
 
-ReactDOM.render( Element , app )
+ReactDOM.render( <Badge /> , app )
