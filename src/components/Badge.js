@@ -7,6 +7,17 @@ class Badge extends React.Component {
 
 	render() {
 
+			const {
+
+				firstName,
+				lastName,
+				jobTitle,
+				twitterUserName,
+				avatar
+
+
+			} = this.props;
+
 			return(
 
 			       	<article className="Badge">
@@ -20,17 +31,22 @@ class Badge extends React.Component {
 			       				<picture>
 			       					<img 
 			       						className="Badge_avatar"
-			       					  src="https://www.gravatar.com/avatar?d=identicon" 
+			       					  src={avatar} 
 			       					  alt="avatar"
 			       					/>
 			       				</picture>
-			       				<h1> Daniel <br /> Páez</h1>
+			       				<h1> {firstName} <br /> {lastName} </h1>
 
 			       			</section>
 
 			       			<section className="Badge_section-info">
-			       				<h3> Ethical Frontend Engineer</h3>
-			       				<div> @heysoypaez </div>
+			       				<h3> {jobTitle} </h3>
+			       				<div>
+
+				       				<a href={`https://twitter.com/${twitterUserName}`}>
+				       				@{twitterUserName} 
+				       				</a> 
+			       				</div>
 			       			</section>
 
 			       			<section className="Badge_footer">
