@@ -10,11 +10,15 @@ $container.appendChild($element)
 
 import React from "react";
 import ReactDOM from "react-dom";
+
 import BadgeNew from "./components/pages/BadgeNew.js"
+import Badges from "./components/pages/Badges.js"
+
+
 import "./global.css"
 
 //import "boostrap/dist/css/boostrap.css"; error
 
 const app = document.getElementById('app');
 
-ReactDOM.render( <BadgeNew /> , app )
+ReactDOM.render( <Badges/> , app )
