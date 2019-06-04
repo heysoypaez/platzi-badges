@@ -1,6 +1,6 @@
 .BadgeNew__hero {
 
-	height: 300px;
+	height: 120px;
 	position: relative;
 	z-index: 6;
 	overflow: hidden;
@@ -11,6 +11,7 @@
 	align-items: flex-start;
 
 	padding: 0 20px;
+	margin-bottom: 20px;
 }
 
 .BadgeNew__hero-header {
@@ -18,4 +19,11 @@
 	width: 200px;
 	z-index: 6;
 	position: relative;
+}
+
+.BadgeNew__content {
+
+	display: flex;
+	justify-content: space-around;
+
 }

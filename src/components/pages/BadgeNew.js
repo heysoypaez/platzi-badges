@@ -1,14 +1,41 @@
 import React, { Component } from 'react';
+
+import NavBar from "../NavBar.js"
 import Badge from "../Badge.js";
+import BadgeForm from "../BadgeForm.js"
 
 import "../styles/BadgeNew.css";
 
 import header from "../../images/badge-header.svg"
 
-import NavBar from "../NavBar.js"
-
 
 class BadgeNew extends Component {
+ 
+	state = {
+		form:{}
+	}
+
+	handleInputChange = async (event) => {
+	
+		await this.setState({
+
+			form: {
+					...this.state.form, //rewriting what was in the object
+			[event.target.name] : event.target.value
+			}		
+		});
+
+	}
+
+	handleSubmitClick = event => {
+		console.log("Button was clicked")
+	}
+
+	handleBadgeFormSubmit = event => {
+			event.preventDefault()
+			console.log("Form was submitted", this.state)
+	}
+
 	render() {
 		return (
 			<section className="BadgeNew">
@@ -19,20 +46,24 @@ class BadgeNew extends Component {
 					<img className="BadgeNew__hero-header" src={header} alt="logo" />
 				</section>
 
-				<section>
+				<section className="BadgeNew__content">
 
 					<Badge
-					 		firstName="Daniel"
-					 		lastName="Páez"
-					 		jobTitle="Ethical Frontend Engineer"
-					 		twitterUserName="heysoypaez"
+					 		firstName={this.state.form.firstName}
+					 		lastName={this.state.form.lastName}
+					 		jobTitle={this.state.form.jobTitle}
+					 		twitterUserName={this.state.form.twitterUserName}
+					 		email={this.state.form.email}
 					 		avatar="https://secure.gravatar.com/avatar/5201999281068f1d63445496fbccfe06"
-
 					 />
 
-				{/* AttendeForm  */}
+					<BadgeForm 
+						onSubmit={this.handleBadgeFormSubmit}
+						onChange={this.handleInputChange}
+						onClick={this.handleSubmitClick}
+					/>
 
-				 </section>
+				</section>
 
 			</section>
 		);
