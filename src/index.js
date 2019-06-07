@@ -13,6 +13,7 @@ import ReactDOM from "react-dom";
 
 import BadgeNew from "./components/pages/BadgeNew.js"
 import Badges from "./components/pages/Badges.js"
+import App from "./components/App.js"
 
 
 import "./global.css"
@@ -21,4 +22,4 @@ import "./global.css"
 
 const app = document.getElementById('app');
 
-ReactDOM.render( <Badges/> , app )
+ReactDOM.render( <App/> , app )

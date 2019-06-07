@@ -21,7 +21,6 @@ class Badge extends React.Component {
 			return(
 
 			       	<article className="Badge">
-			       		<div>
 
 			       			<figure className="Badge_header">
 			       				<img src={ImageConfLogo} alt=" Logo de la conferencia" />	
@@ -53,7 +52,6 @@ class Badge extends React.Component {
 			       				<p>#platziconfs</p>
 			       			</section>
 			       			
-			       		</div>
 			       	</article>
 			 )
 	}

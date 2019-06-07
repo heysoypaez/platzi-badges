@@ -1,8 +1,12 @@
 import React, { Component } from 'react';
 import NavBar from "../NavBar.js"
 
+import Layout from "../Layout.js"
+
 import confLogo from "../../images/badge-header.svg"
 import BadgesList from "../BadgesList.js"
+
+import { Switch, Link} from "react-router-dom";
 
 
 import "../styles/Badges.css"
@@ -43,9 +47,8 @@ import "../styles/Badges.css"
  	}
 
 	render() {
+		
 		return (
-			<section>
-				<NavBar />
 				<section className="Badges">
 
 					<section className="Badges__hero">
@@ -62,18 +65,17 @@ import "../styles/Badges.css"
 					<section className="Badges__container">
 
 						<section className="Badges__buttons" >
-							<a href="/badges/new" className="Badges__btn"> 
+					
+							<Link to={"/badges/new"} className="Badges__btn"> 
 								New badge
-							</a>
+							</Link>
+							
 						</section>
 
 						<BadgesList badges={this.state.data}/>
 
 					</section>
-
-
 				</section>
-			</section>
 		);
 	}
 }

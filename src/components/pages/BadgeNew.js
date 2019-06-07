@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
-import NavBar from "../NavBar.js"
+import Layout from "../Layout.js"
+
 import Badge from "../Badge.js";
 import BadgeForm from "../BadgeForm.js"
 
@@ -24,10 +25,10 @@ class BadgeNew extends Component {
 			[event.target.name] : event.target.value
 			}		
 		});
-
 	}
 
 	handleSubmitClick = event => {
+
 		console.log("Button was clicked")
 	}
 
@@ -37,12 +38,13 @@ class BadgeNew extends Component {
 	}
 
 	render() {
+			
 		return (
+		 
 			<section className="BadgeNew">
-				
-				<NavBar />
 		
 				<section className="BadgeNew__hero">
+
 					<img className="BadgeNew__hero-header" src={header} alt="logo" />
 				</section>
 
@@ -62,10 +64,10 @@ class BadgeNew extends Component {
 						onChange={this.handleInputChange}
 						onClick={this.handleSubmitClick}
 					/>
-
 				</section>
 
 			</section>
+
 		);
 	}
 }
