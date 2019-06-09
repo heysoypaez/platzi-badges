@@ -16,3 +16,21 @@ h1 {
 
 	font-size: 36px;
 }
+
+
+.btn {
+	
+	padding: 5px 10px;
+	margin: 10px 0;
+	background-color: #57C620;
+	color: white;
+	border: 0;
+	border-bottom: 5px solid #4a9923 ;
+
+	cursor: pointer;
+	font-size: 21px;
+	text-decoration: none;
+	text-align: center;
+
+	border-radius: 5px;
+}

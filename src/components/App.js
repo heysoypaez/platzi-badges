@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+
+import Home from "./pages/Home.js"
 import BadgeNew from "./pages/BadgeNew.js"
 import Badges from "./pages/Badges.js"
 import NotFound from "./pages/NotFound.js"
@@ -16,7 +18,7 @@ function App(props) {
 				<Layout>
 				<Switch>
 
-					<Route exact path="/" component={Badges} />
+					<Route exact path="/" component={Home} />
 					<Route exact path="/badges" component={Badges} />
 					<Route exact path="/badges/new" component={BadgeNew} />
 

@@ -17,6 +17,11 @@
 
 }
 
+.BadgeItem:hover {
+		box-shadow: 10px 10px 10px #ababab
+
+}
+
 .BadgeItem__avatar {
 	border-radius: 90px;
 }

@@ -66,7 +66,7 @@ import "../styles/Badges.css"
 
 						<section className="Badges__buttons" >
 					
-							<Link to={"/badges/new"} className="Badges__btn"> 
+							<Link to={"/badges/new"} className="btn"> 
 								New badge
 							</Link>
 							
