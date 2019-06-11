@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 
-import Layout from "../Layout.js"
-
 import Badge from "../Badge.js";
 import BadgeForm from "../BadgeForm.js"
 

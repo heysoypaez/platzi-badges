@@ -1,11 +1,24 @@
 import React, { Component } from 'react';
 import "./styles/BadgesList.css"
 import twitterLogo from "../images/Twitter_Logo_Blue.svg"
+import {Link} from "react-router-dom"
 
 
 class BadgesList extends Component {
 
 	render() {
+
+		if(this.props.badges.length === 0) {
+			return (
+			  <section>
+			  <h2>We didn't find any Badge :/</h2>
+			  <h3><i>But you can create the first now</i></h3>
+			  <br />
+			  <Link className="btn" to="/badges/new">Do it</Link>
+			  </section>
+			)
+		}
+
 		return (
 					<section className="Badges__list">
 							
@@ -52,7 +65,7 @@ class BadgesList extends Component {
 									)}
 								</ul>
 							</section>
-						</section>
+					</section>
 		);
 	}
 }
