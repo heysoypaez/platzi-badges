@@ -14,7 +14,7 @@ class Badge extends React.Component {
 				firstName,
 				lastName,
 				jobTitle,
-				twitterUserName,
+				twitter,
 				email
 
 
@@ -40,8 +40,8 @@ class Badge extends React.Component {
 			       				<h3> {jobTitle} </h3>
 			       				<div>
 
-				       				<a href={`https://twitter.com/${twitterUserName}`}>
-				       				@{twitterUserName} 
+				       				<a href={`https://twitter.com/${twitter}`}>
+				       				@{twitter} 
 				       				</a> 
 			       				</div>
 			       			</section>

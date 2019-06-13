@@ -46,12 +46,12 @@ class BadgeForm extends Component {
 						value={this.props.jobTitle}
 					/>
 
-					<label htmlFor="twitterUserName">Twitter</label>
+					<label htmlFor="twitter">Twitter</label>
 					<input 
 						onChange={this.props.onChange}
 						type="text" 
-						name="twitterUserName" 
-						value={this.props.twitterUserName}
+						name="twitter" 
+						value={this.props.twitter}
 					/>
 
 	

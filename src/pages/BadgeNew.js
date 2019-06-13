@@ -9,6 +9,8 @@ import header from "../images/platziconf-logo.svg"
 
 import api from "../api.js"
 
+import GravatarUrl from "../components/GravatarUrl.js"
+
 
 class BadgeNew extends Component {
  
@@ -19,7 +21,7 @@ class BadgeNew extends Component {
 			firstName: "Donald" ,
 			jobTitle: "President of USA",
 			lastName:"Trump",
-			twitterUserName: "realDonaldTrump",
+			twitter: "realDonaldTrump",
 			avatarUrl: ""
 		},
 
@@ -33,8 +35,13 @@ class BadgeNew extends Component {
 
 			form: {
 					...this.state.form, //rewriting what was in the object
-			[event.target.name] : event.target.value
-			}		
+			[event.target.name] : event.target.value,
+
+			avatarUrl: GravatarUrl(this.state.form.email)
+			}	,
+
+
+
 		});
 	}
 
@@ -81,7 +88,7 @@ class BadgeNew extends Component {
 					 		firstName={this.state.form.firstName}
 					 		lastName={this.state.form.lastName}
 					 		jobTitle={this.state.form.jobTitle}
-					 		twitterUserName={this.state.form.twitterUserName}
+					 		twitter={this.state.form.twitter}
 					 		email={this.state.form.email}
 					
 					 />
