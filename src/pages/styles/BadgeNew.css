@@ -8,15 +8,20 @@
 	background-color: #232323;
 	background-image: url(../../images/stars.svg);
 	display: flex;
-	align-items: flex-start;
+
+
+	justify-content: center; /*horizontal*/
+	align-items: center; /*vertical*/
 
 	padding: 0 20px;
 	margin-bottom: 20px;
 }
 
+
+
 .BadgeNew__hero-header {
 
-	width: 200px;
+	max-height: 90px;
 	z-index: 6;
 	position: relative;
 }

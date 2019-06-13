@@ -1,17 +1,30 @@
 import React, { Component } from 'react';
 
-import Badge from "../Badge.js";
-import BadgeForm from "../BadgeForm.js"
+import Badge from "../components/Badge.js";
+import BadgeForm from "../components/BadgeForm.js"
 
-import "../styles/BadgeNew.css";
+import "./styles/BadgeNew.css";
 
-import header from "../../images/badge-header.svg"
+import header from "../images/platziconf-logo.svg"
+
+import api from "../api.js"
 
 
 class BadgeNew extends Component {
  
 	state = {
-		form:{}
+		form:{
+
+			email: "realDonaldTrump@gmail.com",
+			firstName: "Donald" ,
+			jobTitle: "President of USA",
+			lastName:"Trump",
+			twitterUserName: "realDonaldTrump",
+			avatarUrl: ""
+		},
+
+		loading: false,
+		error: null
 	}
 
 	handleInputChange = async (event) => {
@@ -25,15 +38,31 @@ class BadgeNew extends Component {
 		});
 	}
 
-	handleSubmitClick = event => {
-
-		console.log("Button was clicked")
-	}
-
-	handleBadgeFormSubmit = event => {
+	handleBadgeFormSubmit = async (event) => {
 			event.preventDefault()
 			console.log("Form was submitted", this.state)
+
+				this.setState({
+					loading: true,
+					error: null
+				})
+
+			try {
+				await api.badges.create(this.state.form)
+				this.setState({
+					loading: false,
+				})
+			}
+
+			catch(error) {
+				this.setState({
+					loading: false,
+					error: error
+				})
+			}
 	}
+
+
 
 	render() {
 			
@@ -54,13 +83,12 @@ class BadgeNew extends Component {
 					 		jobTitle={this.state.form.jobTitle}
 					 		twitterUserName={this.state.form.twitterUserName}
 					 		email={this.state.form.email}
-					 		avatar="https://secure.gravatar.com/avatar/5201999281068f1d63445496fbccfe06"
+					
 					 />
 
 					<BadgeForm 
 						onSubmit={this.handleBadgeFormSubmit}
 						onChange={this.handleInputChange}
-						onClick={this.handleSubmitClick}
 					/>
 				</section>
 

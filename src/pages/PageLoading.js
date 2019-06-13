@@ -1,6 +1,6 @@
-import React, { Component } from 'react';
-import "../styles/PageLoading.css"
-import Loader from "../Loader.js"
+import React from 'react';
+import "./styles/PageLoading.css"
+import Loader from "../components/Loader.js"
 
 function PageLoading(props) {
 	

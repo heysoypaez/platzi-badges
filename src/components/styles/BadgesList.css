@@ -24,6 +24,11 @@
 
 .BadgeItem__avatar {
 	border-radius: 90px;
+	min-width: 90px;
+	max-height: 90px;
+	max-width: 120px;
+	max-height: 120px;
+
 }
 
 .BadgeItem__details {

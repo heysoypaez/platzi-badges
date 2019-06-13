@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 
-import confLogo from "../../images/platziconf-logo.svg"
-import astronauts from "../../images/astronauts.svg"
+import confLogo from "../images/platziconf-logo.svg"
+import astronauts from "../images/astronauts.svg"
 
-import "../styles/Home.css"
+import "./styles/Home.css"
 
 import {Link} from "react-router-dom"
 

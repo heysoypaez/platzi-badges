@@ -1,94 +1,31 @@
 {
   "badges": [
     {
-      "id": "2de30c42-9deb-40fc-a41f-05e62b5939a7",
-      "firstName": "Freda",
-      "lastName": "Grady",
-      "email": "Leann_Berge@gmail.com",
-      "jobTitle": "Legacy Brand Director",
-      "twitter": "FredaGrady22221-7573",
-      "avatarUrl": "https://www.gravatar.com/avatar/f63a9c45aca0e7e7de0782a6b1dff40b?d=identicon"
+      "email": "donaldtrump@gmail.com",
+      "firstName": "Donald",
+      "jobTitle": "President of USA",
+      "lastName": "Trump",
+      "twitter": "realDonaldTrump",
+      "id": "vQjY2yc",
+      "avatarUrl": "https://cdn.images.express.co.uk/img/dynamic/galleries/64x64/236407.jpg"
     },
     {
-      "id": "d00d3614-101a-44ca-b6c2-0be075aeed3d",
-      "firstName": "Major",
-      "lastName": "Rodriguez",
-      "email": "Ilene66@hotmail.com",
-      "jobTitle": "Human Research Architect",
-      "twitter": "MajorRodriguez61545",
-      "avatarUrl": "https://www.gravatar.com/avatar/d57a8be8cb9219609905da25d5f3e50a?d=identicon"
+      "email": "danielpaezsw66@gmail.com",
+      "firstName": "Daniel",
+      "jobTitle": "Ethical Software Developer",
+      "lastName": "Páez",
+      "twitter": "heysoypaez",
+      "id": "vQjY2yc",
+      "avatarUrl": "https://gravatar.com/avatar/5201999281068f1d63445496fbccfe06=identicon"
     },
-    {
-      "id": "63c03386-33a2-4512-9ac1-354ad7bec5e9",
-      "firstName": "Daphney",
-      "lastName": "Torphy",
-      "email": "Ron61@hotmail.com",
-      "jobTitle": "National Markets Officer",
-      "twitter": "DaphneyTorphy96105",
-      "avatarUrl": "https://www.gravatar.com/avatar/e74e87d40e55b9ff9791c78892e55cb7?d=identicon"
-    },
-    {
-      "id": "a9748581-dfdc-4a78-930d-5205a2ccef48",
-      "firstName": "Tatyana",
-      "lastName": "Von",
-      "email": "Herminio.Schmeler@hotmail.com",
-      "jobTitle": "Central Branding Representative",
-      "twitter": "TatyanaVon35871-3686",
-      "avatarUrl": "https://www.gravatar.com/avatar/98c382edd93414c1649b9db866000f97?d=identicon"
-    },
-    {
-      "id": "1921a734-cc05-4f71-a677-ffe38dda6958",
-      "firstName": "Maude",
-      "lastName": "Effertz",
-      "email": "Dan_Weimann0@yahoo.com",
-      "jobTitle": "Product Solutions Analyst",
-      "twitter": "MaudeEffertz73114",
-      "avatarUrl": "https://www.gravatar.com/avatar/01d0de92ec9ca4fdfbb99edf6a1abfea?d=identicon"
-    },
-    {
-      "id": "3629db36-14f9-4f24-b139-200f3a1b9af7",
-      "firstName": "Breanna",
-      "lastName": "Runolfsdottir",
-      "email": "Laurianne.Lynch@gmail.com",
-      "jobTitle": "Lead Marketing Director",
-      "twitter": "BreannaRunolfsdottir70705-1477",
-      "avatarUrl": "https://www.gravatar.com/avatar/684697e194c66d338c5ee91d030121cc?d=identicon"
-    },
-    {
-      "id": "8c734836-1f7a-4493-b903-37db30fc7224",
-      "firstName": "Jan",
-      "lastName": "Oberbrunner",
-      "email": "Estella8@gmail.com",
-      "jobTitle": "Regional Data Assistant",
-      "twitter": "JanOberbrunner86906-8430",
-      "avatarUrl": "https://www.gravatar.com/avatar/7a4de3ec254747b304a82a14270e72be?d=identicon"
-    },
-    {
-      "id": "04479bae-a34a-448e-bb20-a10920d48c1f",
-      "firstName": "Kaelyn",
-      "lastName": "Hoppe",
-      "email": "Deshaun_Steuber@gmail.com",
-      "jobTitle": "Senior Implementation Architect",
-      "twitter": "KaelynHoppe15215",
-      "avatarUrl": "https://www.gravatar.com/avatar/d5a91308668dd768e955e2efd0fcdb37?d=identicon"
-    },
-    {
-      "id": "a878c84d-8f49-45da-bbda-313503f9898f",
-      "firstName": "Nova",
-      "lastName": "Bergstrom",
-      "email": "Darrell10@gmail.com",
-      "jobTitle": "Lead Interactions Officer",
-      "twitter": "NovaBergstrom48167",
-      "avatarUrl": "https://www.gravatar.com/avatar/e65037a095cfcc6aec56cad1a2128207?d=identicon"
-    },
-    {
-      "id": "eb28f57f-6448-4d40-8f57-8db27831a605",
-      "firstName": "Myrtle",
-      "lastName": "Torphy",
-      "email": "Torrance.Gaylord@yahoo.com",
-      "jobTitle": "Lead Directives Liaison",
-      "twitter": "MyrtleTorphy42588-6517",
-      "avatarUrl": "https://www.gravatar.com/avatar/03b84b35e3a31f091a07910da97ff46a?d=identicon"
+   {
+      "firstName": "Richard",
+      "lastName": "Kaufman López",
+      "email": "richardbkaufman@gmail.com",
+      "avatarUrl": "https://www.gravatar.com/avatar/21594ed15d68ace3965642162f8d2e84?d=identicon",
+      "jobTitle": "Frontend Engineer @ Kickass Partners",
+      "twitter": "sparragus",
+      "id": "EYR2BVQ"
     },
     {
       "id": "052e04c9-6386-400c-8794-c1ac8f794a75",
@@ -342,96 +279,7 @@
       "twitter": "ConradErnser80604-5459",
       "avatarUrl": "https://www.gravatar.com/avatar/9e78e69fcc46747356b69141f5eea889?d=identicon"
     },
-    {
-      "id": "3f118941-b1be-44d8-83c2-c83aadef9ca6",
-      "firstName": "Kailee",
-      "lastName": "Jast",
-      "email": "Clement_Mills@hotmail.com",
-      "jobTitle": "Dynamic Implementation Engineer",
-      "twitter": "KaileeJast49404-0773",
-      "avatarUrl": "https://www.gravatar.com/avatar/32d63888a2b07663fb337eab85b91398?d=identicon"
-    },
-    {
-      "id": "a181b291-ea1f-4296-b645-c1d5b2afc59c",
-      "firstName": "Zane",
-      "lastName": "Jones",
-      "email": "Georgiana_Haag@gmail.com",
-      "jobTitle": "National Accountability Architect",
-      "twitter": "ZaneJones11425-2361",
-      "avatarUrl": "https://www.gravatar.com/avatar/e37af7a0cae81e034172ef62c157d05c?d=identicon"
-    },
-    {
-      "id": "ec9c5695-3a42-45ef-a273-d4c80c0e8f27",
-      "firstName": "Zoey",
-      "lastName": "Wiegand",
-      "email": "Friedrich_OConner35@yahoo.com",
-      "jobTitle": "Future Accounts Technician",
-      "twitter": "ZoeyWiegand43509",
-      "avatarUrl": "https://www.gravatar.com/avatar/82d4628e093cad1bdcfb24e5eecd815d?d=identicon"
-    },
-    {
-      "id": "1c72396b-5dfc-4574-b36e-9ffdfebfba64",
-      "firstName": "Ian",
-      "lastName": "Heaney",
-      "email": "Alexys.Gutkowski34@yahoo.com",
-      "jobTitle": "Direct Optimization Specialist",
-      "twitter": "IanHeaney66784",
-      "avatarUrl": "https://www.gravatar.com/avatar/097d0e30a04e69b707b08cdad62ffdd2?d=identicon"
-    },
-    {
-      "id": "ff53b940-d5b3-4a66-ad78-af58a9323458",
-      "firstName": "Eudora",
-      "lastName": "Daugherty",
-      "email": "Raina_Hettinger@yahoo.com",
-      "jobTitle": "Global Metrics Technician",
-      "twitter": "EudoraDaugherty44214-4039",
-      "avatarUrl": "https://www.gravatar.com/avatar/e19db69107841cab64edd704fa177509?d=identicon"
-    },
-    {
-      "id": "9c2c7b04-532f-4c13-abbd-bcf694d9fe11",
-      "firstName": "Leonie",
-      "lastName": "Towne",
-      "email": "Reyes.Senger@yahoo.com",
-      "jobTitle": "Customer Markets Coordinator",
-      "twitter": "LeonieTowne65019-2735",
-      "avatarUrl": "https://www.gravatar.com/avatar/2418114906f2bea38d7485340a7f0461?d=identicon"
-    },
-    {
-      "id": "919f32ca-0d97-4639-8aca-8c4c888e6caf",
-      "firstName": "Winifred",
-      "lastName": "Thiel",
-      "email": "Euna.Bartoletti@hotmail.com",
-      "jobTitle": "Regional Metrics Administrator",
-      "twitter": "WinifredThiel14630",
-      "avatarUrl": "https://www.gravatar.com/avatar/b4f66246e7ff34e9a4a176fb58d6ecda?d=identicon"
-    },
-    {
-      "id": "43a0a0df-9a0a-4a56-aa0c-2efc3a2b5897",
-      "firstName": "Reyna",
-      "lastName": "Gislason",
-      "email": "Roxanne47@yahoo.com",
-      "jobTitle": "Central Marketing Director",
-      "twitter": "ReynaGislason11792",
-      "avatarUrl": "https://www.gravatar.com/avatar/570f8b0138bcb82537d55ab7732c8c4f?d=identicon"
-    },
-    {
-      "id": "98dd84a4-8dba-4a7d-87c2-3b9714372d2d",
-      "firstName": "Jed",
-      "lastName": "Sporer",
-      "email": "Santiago.Roberts@yahoo.com",
-      "jobTitle": "Dynamic Accounts Agent",
-      "twitter": "JedSporer30424",
-      "avatarUrl": "https://www.gravatar.com/avatar/4f164ea9a61e8d28e6b83a356d3ff5ae?d=identicon"
-    },
-    {
-      "firstName": "Richard",
-      "lastName": "Kaufman López",
-      "email": "richardbkaufman@gmail.com",
-      "avatarUrl": "https://www.gravatar.com/avatar/21594ed15d68ace3965642162f8d2e84?d=identicon",
-      "jobTitle": "Frontend Engineer @ Kickass Partners",
-      "twitter": "sparragus",
-      "id": "EYR2BVQ"
-    },
+
     {
       "firstName": "Carolynn",
       "lastName": "Kaufman",

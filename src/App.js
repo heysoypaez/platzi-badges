@@ -1,14 +1,13 @@
-import React, { Component } from 'react';
-
+import React from 'react';
 
 import Home from "./pages/Home.js"
 import BadgeNew from "./pages/BadgeNew.js"
 import Badges from "./pages/Badges.js"
 import NotFound from "./pages/NotFound.js"
 
-import {BrowserRouter, Route, Switch, Link} from "react-router-dom";
+import {BrowserRouter, Route, Switch} from "react-router-dom";
 
-import Layout from "./Layout.js"
+import Layout from "./components/Layout.js"
 
 function App(props) {
 	// body...

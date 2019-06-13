@@ -1,6 +1,5 @@
-import React, { Component } from 'react';
-import "../styles/PageLoading.css"
-import Loader from "../Loader.js"
+import React from 'react';
+import "./styles/PageError.css"
 import {Link} from "react-router-dom"
 
 function PageError(props) {

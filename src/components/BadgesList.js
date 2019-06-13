@@ -45,6 +45,7 @@ class BadgesList extends Component {
 											  		<a 
 											  			href={`https://twitter.com/${badge.twitter}`}
 											  			target="_blank"
+											  			rel="noopener noreferrer" 
 											  		>
 											  			<img 
 											  				src={twitterLogo} 

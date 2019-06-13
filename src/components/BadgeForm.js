@@ -12,7 +12,7 @@ class BadgeForm extends Component {
 			<section className="BadgeForm">
 
 				<h1>New Attendant</h1>
-				<form onSubmit={this.props.submit}>
+				<form onSubmit={this.props.onSubmit}>
 
 					<label htmlFor="firstName">First Name</label>
 					<input 
