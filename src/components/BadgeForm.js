@@ -62,11 +62,16 @@ class BadgeForm extends Component {
 					 onClick={this.props.onClick} 
 					/>
 					 
-				</form>
+					{this.props.error && (
 
-				<section>
-					<h1 id="testing-area"> </h1>
-				</section>
+							<p>{this.props.error.message}</p>
+
+						)
+
+					} 
+
+
+				</form>
 
 			</section>
 		);

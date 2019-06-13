@@ -11,6 +11,8 @@ import api from "../api.js"
 
 import GravatarUrl from "../components/GravatarUrl.js"
 
+import PageLoading from "./PageLoading.js";
+
 
 class BadgeNew extends Component {
  
@@ -40,8 +42,6 @@ class BadgeNew extends Component {
 			avatarUrl: GravatarUrl(this.state.form.email)
 			}	,
 
-
-
 		});
 	}
 
@@ -59,6 +59,8 @@ class BadgeNew extends Component {
 				this.setState({
 					loading: false,
 				})
+
+				this.props.history.push("/badges")
 			}
 
 			catch(error) {
@@ -72,6 +74,11 @@ class BadgeNew extends Component {
 
 
 	render() {
+
+		if(this.state.loading) {
+			return <PageLoading />
+		}
+
 			
 		return (
 		 
@@ -96,11 +103,11 @@ class BadgeNew extends Component {
 					<BadgeForm 
 						onSubmit={this.handleBadgeFormSubmit}
 						onChange={this.handleInputChange}
+						error= {this.state.error}
 					/>
 				</section>
 
 			</section>
-
 		);
 	}
 }
