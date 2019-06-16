@@ -7,6 +7,7 @@ import confLogo from "../images/badge-header.svg"
 import BadgesList from "../components/BadgesList.js"
 import { Link} from "react-router-dom";
 import api from "../api"
+import MiniLoader from "../components/MinilLoader.js";
 
 import "./styles/Badges.css"
 
@@ -15,8 +16,6 @@ import "./styles/Badges.css"
 
 constructor(props) {
 	super(props);
-	console.log(1, "Constructor");
-
 
  	this.state = {
 
@@ -54,50 +53,38 @@ constructor(props) {
 
 	componentDidMount() {
 
-		console.log(3, "Component Did Mount")
 		this.fetchData();
+
+		//every 5 seconds executes this function
+		this.interval = setInterval(this.fetchData, (1000*5) )
 	}
 
 	componentDidUpdate(prevProps, prevState) {
-		console.log(5, "componentDidUpdate(prevProps, prevState)")
 
-		console.log(
-		  {prevProps: prevProps}, 
-		  {prevState: prevState}
-		)
-
-				console.log(
-		  {Props: this.props}, 
-		  {State: this.state}
-		)
 	}
 
 	componentWillUnmount() {
-		clearTimeout(this.timeoutId);
 		//Limpiamos memoria
-		console.log(6, "componentWillUnmount()" )	
+
+		clearInterval(this.interval)
+	
 	}
 
 
 	render() {
-
-		console.log(2,4, "render")
-
 				
-			if	(this.state.loading) {
-				return (
-				   <PageLoading />
-				)
-			}
+		if(this.state.loading && !this.state.data) {
+			return (
+			   <PageLoading />
+			)
+		}
 
-			if	(this.state.error) {
-				return (
-				  <PageError error={this.state.error} />
-				)
-			}
+		if(this.state.error) {
+			return (
+			  <PageError error={this.state.error} />
+			)
+		}
 
-					
-		
 		return (
 				<section className="Badges">
 
@@ -115,13 +102,20 @@ constructor(props) {
 					<section className="Badges__container">
 
 						<section className="Badges__buttons" >
-					
+
+						{
+							this.state.loading && 
+							<MiniLoader />
+						}
+											
 							<Link to={"/badges/new"} className="btn"> 
 								New badge
 							</Link>
-							
+
 						</section>
 
+
+						
 						<BadgesList badges={this.state.data}/>
 
 					</section>

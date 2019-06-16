@@ -3,7 +3,6 @@ import "./styles/BadgesList.css"
 import twitterLogo from "../images/Twitter_Logo_Blue.svg"
 import {Link} from "react-router-dom"
 
-
 class BadgesList extends Component {
 
 	render() {
@@ -20,49 +19,51 @@ class BadgesList extends Component {
 		}
 
 		return (
-					<section className="Badges__list">
+
+			<section className="Badges__list">
 							
-							<section className="Badges__container">
-								<ul>
-									{this.props.badges.map(
-										(badge) => {
+				<section className="Badges__container">
+					
+					<ul>
+					{this.props.badges.map(
+						
+						(badge) => (
 
-											return (
+						  <li key={badge.id} className="BadgeItem" >
 
-											  <li key={badge.id} className="BadgeItem" >
+						  	<figure>
+						  		<img 
+						  			src={badge.avatarUrl} 
+						  			alt={`avatar ${badge.firstName} ${badge.lastName}`}
+						  			className="BadgeItem__avatar"
+						  		/>
+						  	</figure>
 
-											  	<figure>
-											  		<img 
-											  			src={badge.avatarUrl} 
-											  			alt={`avatar ${badge.firstName} ${badge.lastName}`}
-											  			className="BadgeItem__avatar"
-											  		/>
-											  	</figure>
+						  	<section className="BadgeItem__details">
+						  		<h3> {badge.firstName} {badge.lastName}  </h3>
 
-											  	<section className="BadgeItem__details">
-											  		<h3> {badge.firstName} {badge.lastName}  </h3>
+						  		<a 
+						  			href={`https://twitter.com/${badge.twitter}`}
+						  			target="_blank"
+						  			rel="noopener noreferrer" 
+						  		>
+						  			<img 
+						  				src={twitterLogo} 
+						  				alt="twitter Logo" 
+						  				height={40}
+						  				width={40}
+						  			/>
+						  			{`@${badge.twitter}`}
+						  		</a>
 
-											  		<a 
-											  			href={`https://twitter.com/${badge.twitter}`}
-											  			target="_blank"
-											  			rel="noopener noreferrer" 
-											  		>
-											  			<img 
-											  				src={twitterLogo} 
-											  				alt="twitter Logo" 
-											  				height={40}
-											  				width={40}
-											  			/>
-											  			{`@${badge.twitter}`}
-											  		</a>
-
-											  		<p>{badge.jobTitle}</p>
-											  	</section>
-											  	
-											  </li>
+						  		<p>{badge.jobTitle}</p>
+						  		<Link to={`/badges/${badge.id}/edit`} >Edit</Link>
+						  	</section>
+						  	
+						  </li>
 
 											)
-										}
+										
 									)}
 								</ul>
 							</section>

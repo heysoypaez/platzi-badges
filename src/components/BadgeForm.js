@@ -11,7 +11,7 @@ class BadgeForm extends Component {
 		return (
 			<section className="BadgeForm">
 
-				<h1>New Attendant</h1>
+				<h1>{this.props.title}</h1>
 				<form onSubmit={this.props.onSubmit}>
 
 					<label htmlFor="firstName">First Name</label>

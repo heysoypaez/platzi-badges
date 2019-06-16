@@ -3,32 +3,32 @@
     {
       "email": "donaldtrump@gmail.com",
       "firstName": "Donald",
-      "jobTitle": "President of USA",
+      "jobTitle": "President of the USA",
       "lastName": "Trump",
-      "twitter": "realDonaldTrump",
-      "id": "vQjY2yc",
-      "avatarUrl": "https://cdn.images.express.co.uk/img/dynamic/galleries/64x64/236407.jpg"
+      "twitter": "donaldtrump",
+      "id": 1,
+      "avatarUrl": "https://gravatar.com/avatar/7cf560e0dd620906adfe8b4b0efc583d=identicon"
     },
     {
       "email": "danielpaezsw66@gmail.com",
       "firstName": "Daniel",
-      "jobTitle": "Ethical Software Developer",
+      "jobTitle": "Ethical Software Dev",
       "lastName": "Páez",
       "twitter": "heysoypaez",
-      "id": "vQjY2yc",
-      "avatarUrl": "https://gravatar.com/avatar/5201999281068f1d63445496fbccfe06=identicon"
+      "id": 2,
+      "avatarUrl": "https://gravatar.com/avatar/55b7e8b895d047537e672250dd781555=identicon"
     },
     {
       "firstName": "Richard",
-      "lastName": "Kaufman López",
+      "lastName": "Kaufman",
       "email": "richardbkaufman@gmail.com",
-      "avatarUrl": "https://www.gravatar.com/avatar/21594ed15d68ace3965642162f8d2e84?d=identicon",
+      "avatarUrl": "https://gravatar.com/avatar/21594ed15d68ace3965642162f8d2e84=identicon",
       "jobTitle": "Frontend Engineer @ Kickass Partners",
       "twitter": "sparragus",
-      "id": "EYR2BVQ"
+      "id": 3
     },
     {
-      "id": "052e04c9-6386-400c-8794-c1ac8f794a75",
+      "id": 4,
       "firstName": "Pamela",
       "lastName": "Ritchie",
       "email": "Daren95@yahoo.com",
@@ -37,7 +37,7 @@
       "avatarUrl": "https://www.gravatar.com/avatar/9ffc47916a084028d7a6436531077852?d=identicon"
     },
     {
-      "id": "4bbb7f45-e0be-4b7f-ab7c-101b3ecb2d04",
+      "id": 5,
       "firstName": "Maynard",
       "lastName": "Huel",
       "email": "Chadd37@yahoo.com",
@@ -46,7 +46,7 @@
       "avatarUrl": "https://www.gravatar.com/avatar/eec9b2ede8a775989ff71b5308ff52d7?d=identicon"
     },
     {
-      "id": "67565eb7-9738-4dab-8b10-081d3dcff01d",
+      "id": 6,
       "firstName": "Devin",
       "lastName": "Bartell",
       "email": "Dean80@hotmail.com",
@@ -61,7 +61,7 @@
       "lastName": "Paez",
       "twitter": "heysoypaez",
       "avatarUrl": "https://gravatar.com/avatar/5201999281068f1d63445496fbccfe06=identicon",
-      "id": "_knPlyN"
+      "id": 7
     },
     {
       "email": "danielpaezsw66@gmail.com",
@@ -70,7 +70,7 @@
       "lastName": "Paez",
       "twitter": "heysoypaez",
       "avatarUrl": "https://gravatar.com/avatar/5201999281068f1d63445496fbccfe06=identicon",
-      "id": "DcwEwy2"
+      "id": 8
     }
   ]
 }

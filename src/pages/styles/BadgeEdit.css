@@ -1,0 +1,38 @@
+.BadgeEdit {
+	padding-bottom: 5%; 	
+}
+
+.BadgeEdit__hero {
+
+	height: 120px;
+	position: relative;
+	z-index: 6;
+	overflow: hidden;
+
+	background-color: #232323;
+	background-image: url(../../images/stars.svg);
+	display: flex;
+
+
+	justify-content: center; /*horizontal*/
+	align-items: center; /*vertical*/
+
+	padding: 0 20px;
+	margin-bottom: 20px;
+}
+
+
+
+.BadgeEdit__hero-header {
+
+	max-height: 90px;
+	z-index: 6;
+	position: relative;
+}
+
+.BadgeEdit__content {
+
+	display: flex;
+	justify-content: space-around;
+
+}

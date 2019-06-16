@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import Badge from "../components/Badge.js";
 import BadgeForm from "../components/BadgeForm.js"
 
-import "./styles/BadgeNew.css";
+import "./styles/BadgeEdit.css";
 
 import header from "../images/platziconf-logo.svg"
 
@@ -14,9 +14,14 @@ import GravatarUrl from "../components/GravatarUrl.js"
 import PageLoading from "./PageLoading.js";
 
 
-class BadgeNew extends Component {
- 
-	state = {
+class BadgeEdit extends Component {
+ 	
+ 	constructor(props) {
+
+ 		super(props);
+
+ 		this.state = {
+
 		form:{
 
 			email: "realDonaldTrump@gmail.com",
@@ -26,10 +31,12 @@ class BadgeNew extends Component {
 			twitter: "realDonaldTrump",
 			avatarUrl: ""
 		},
-
 		loading: false,
 		error: null
-	}
+		}
+
+ 	}
+
 
 	handleInputChange = async (event) => {
 	
@@ -82,14 +89,14 @@ class BadgeNew extends Component {
 			
 		return (
 		 
-			<section className="BadgeNew">
+			<section className="BadgeEdit">
 		
-				<section className="BadgeNew__hero">
+				<section className="BadgeEdit__hero">
 
-					<img className="BadgeNew__hero-header" src={header} alt="logo" />
+					<img className="BadgeEdit__hero-header" src={header} alt="logo" />
 				</section>
 
-				<section className="BadgeNew__content">
+				<section className="BadgeEdit__content">
 
 					<Badge
 					 		firstName={this.state.form.firstName}
@@ -101,6 +108,7 @@ class BadgeNew extends Component {
 					 />
 
 					<BadgeForm 
+					title="New Attendant"
 						onSubmit={this.handleBadgeFormSubmit}
 						onChange={this.handleInputChange}
 						error= {this.state.error}
@@ -113,4 +121,4 @@ class BadgeNew extends Component {
 }
 
 
-export default BadgeNew;
+export default BadgeEdit;
