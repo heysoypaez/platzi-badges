@@ -31,6 +31,7 @@ class BadgesList extends Component {
 
 						  <li key={badge.id} className="BadgeItem" >
 
+						  
 						  	<figure>
 						  		<img 
 						  			src={badge.avatarUrl} 
@@ -58,8 +59,9 @@ class BadgesList extends Component {
 
 						  		<p>{badge.jobTitle}</p>
 						  		<Link to={`/badges/${badge.id}/edit`} >Edit</Link>
+						  		<Link to={`/badges/${badge.id}`}>View 		</Link>
 						  	</section>
-						  	
+		  		
 						  </li>
 
 											)

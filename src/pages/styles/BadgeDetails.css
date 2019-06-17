@@ -1,0 +1,38 @@
+.BadgeDetails__hero {
+
+	background-color: #232323;
+	background-image: url("../../images/stars.svg");
+	color: white;
+
+	display: grid;
+	grid-template-areas: "imageConf userName";
+
+	justify-items: center;
+	align-items: center;
+
+	padding: 2vh 5vw;
+}
+
+.BadgeDetails__content {
+
+	display: grid;
+	grid-template-areas: "imageConf userName";
+
+	justify-items: center;
+	align-items: center;
+	
+	justify-content: space-around;
+	
+	padding: 2vh 0;
+}
+
+.BadgeDetails__content-actions {
+	display: grid;
+
+}
+
+
+.BadgeDetails .btn.delete {
+	background-color: #ff0000;
+	border-color: #990000;
+}
