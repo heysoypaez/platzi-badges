@@ -5,7 +5,7 @@ import BadgeNew from "./pages/BadgeNew.js"
 import BadgeEdit from "./pages/BadgeEdit.js"
 import Badges from "./pages/Badges.js"
 import NotFound from "./pages/NotFound.js"
-import BadgeDetails from "./pages/BadgeDetails.js"
+import BadgeDetails from "./pages/BadgeDetailsContainer.js"
 
 import {BrowserRouter, Route, Switch} from "react-router-dom";
 
