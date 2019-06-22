@@ -1,0 +1,25 @@
+
+label {
+	display: block;
+	font-size: 18px;
+}
+
+input {
+	display: block;
+	margin: 5px 0;
+	width: 100%;
+	min-height: 30px;
+
+}
+
+
+.BadgeForm__submit {
+	width: 100%;
+	padding: 3px 0;
+	margin: 10px 0;
+	background-color: #57C620;
+	color: white;
+	border: 1px solid;
+	cursor: pointer;
+	font-size: 21px;
+}

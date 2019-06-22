@@ -1,39 +1,44 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+import confLogo from "../images/platziconf-logo.svg"
+import astronauts from "../images/astronauts.svg"
 
-import './styles/Home.css';
-import platziconfLogoImage from '../images/platziconf-logo.svg';
-import astronautsImage from '../images/astronauts.svg';
+import "./styles/Home.css"
 
-export default class Home extends Component {
-  render() {
-    return (
-      <div className="Home">
-        <div className="container">
-          <div className="row">
-            <div className="Home__col col-12 col-md-4">
-              <img
-                src={platziconfLogoImage}
-                alt="Platzi Conf Logo"
-                className="img-fluid mb-2"
-              />
+import {Link} from "react-router-dom"
 
-              <h1>Badge Management System</h1>
-              <Link className="btn btn-primary" to="/badges">
-                Start
-              </Link>
-            </div>
 
-            <div className="Home__col d-none d-md-block col-md-8">
-              <img
-                src={astronautsImage}
-                alt="Astronauts"
-                className="img-fluid p-4"
-              />
-            </div>
-          </div>
-        </div>
-      </div>
-    );
-  }
+class Home extends Component {
+	render() {
+		return (
+			<section className="Home">
+			
+				<section className="Home__hero">
+				
+					<figure>
+						<img src={confLogo} alt="Logo Platzi Conf" />						
+					</figure>
+
+					<h1 className="Home__Title">
+					Badge <br /> Management <br /> System
+					</h1>
+
+					<Link to="/badges" className="btn">
+						Start
+					</Link>
+
+				</section>
+				
+				<section className="Home__Icon-container">
+				
+					<figure>
+						<img src={astronauts} alt="Logo Platzi Badges" className="Home__Icon-image" />						
+					</figure>
+
+				</section>
+				
+			</section>
+		);
+	}
 }
+
+export default Home;

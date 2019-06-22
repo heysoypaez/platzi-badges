@@ -1,36 +1,62 @@
-import React from 'react';
 
-import './styles/Badge.css';
-import confLogo from '../images/badge-header.svg';
+import React from "react";
+
+import ImageConfLogo from "../images/badge-header.svg";
+import "./styles/Badge.css";
+import Gravatar from "./Gravatar.js"
+
 
 class Badge extends React.Component {
-  render() {
-    return (
-      <div className="Badge">
-        <div className="Badge__header">
-          <img src={confLogo} alt="Logo de la conferencia" />
-        </div>
 
-        <div className="Badge__section-name">
-          <img
-            className="Badge__avatar"
-            src={this.props.avatarUrl}
-            alt="Avatar"
-          />
-          <h1>
-            {this.props.firstName} <br /> {this.props.lastName}
-          </h1>
-        </div>
+	render() {
 
-        <div className="Badge__section-info">
-          <h3>{this.props.jobTitle}</h3>
-          <div>@{this.props.twitter}</div>
-        </div>
+			const {
 
-        <div className="Badge__footer">#platziconf</div>
-      </div>
-    );
-  }
+				firstName,
+				lastName,
+				jobTitle,
+				twitter,
+				email
+
+
+			} = this.props;
+
+			return(
+
+			       	<article className="Badge">
+
+			       			<figure className="Badge_header">
+			       				<img src={ImageConfLogo} alt=" Logo de la conferencia" />	
+			       			</figure> 
+
+			       			<section className="Badge_section-name">
+			       			
+			      				<Gravatar email={email} />
+			       			
+			       				<h1> {firstName} <br /> {lastName} </h1>
+
+			       			</section>
+
+			       			<section className="Badge_section-info">
+			       				<h3> {jobTitle} </h3>
+			       				<div>
+
+				       				<a href={`https://twitter.com/${twitter}`}>
+				       				@{twitter} 
+				       				</a> 
+			       				</div>
+			       			</section>
+
+			       			<section className="Badge_footer">
+			       				<p>#platziconfs</p>
+			       			</section>
+			       			
+			       	</article>
+			 )
+	}
+
+
 }
 
 export default Badge;
+

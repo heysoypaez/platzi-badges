@@ -1,24 +1,41 @@
 .Home {
-  width: 100%;
-  min-height: calc(100vh - 60px);
-  background: url('../../images/stars.svg'), #1B1B25;
-  background-repeat: repeat;
 
-  color: #ffffff;
+	background-color: #100f1c;
+	background-image: url(../../images/stars.svg);
+	height: 85vh;
 
-  display: flex;
-  align-items: center;
+	color: white;
+
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
 }
 
-.Home__col {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.Home__Icon-image {
+	width: 600px;
 }
 
-@media screen and (min-width: 768px) {
-  .Home__col {
-    align-items: flex-start;
-  }
+.Home .btn  {
+
+}
+
+.Home__Title {
+	margin-bottom: 5%;
+		animation: enter 2s linear;
+
+}
+
+@keyframes enter {
+
+	from {
+
+		opacity: 0;
+		transform: translateX(-50px);
+			}
+
+	to {
+		opacity: 1;
+		transform: translateX(0px);
+	}
+
 }

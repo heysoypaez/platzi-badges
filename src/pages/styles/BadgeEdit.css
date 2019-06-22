@@ -1,9 +1,8 @@
-
-.BadgeNew {
+.BadgeEdit {
 	padding-bottom: 5%; 	
 }
 
-.BadgeNew__hero {
+.BadgeEdit__hero {
 
 	height: 120px;
 	position: relative;
@@ -24,14 +23,14 @@
 
 
 
-.BadgeNew__hero-header {
+.BadgeEdit__hero-header {
 
 	max-height: 90px;
 	z-index: 6;
 	position: relative;
 }
 
-.BadgeNew__content {
+.BadgeEdit__content {
 
 	display: flex;
 	justify-content: space-around;

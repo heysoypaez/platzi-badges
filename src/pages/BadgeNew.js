@@ -1,61 +1,126 @@
-import React from 'react';
 
-import './styles/BadgeNew.css';
-import header from '../images/badge-header.svg';
-import Badge from '../components/Badge';
-import BadgeForm from '../components/BadgeForm';
+import React, { Component } from 'react';
 
-class BadgeNew extends React.Component {
-  state = {
-    form: {
-      firstName: '',
-      lastName: '',
-      email: '',
-      jobTitle: '',
-      twitter: '',
-    },
-  };
+import Badge from "../components/Badge.js";
+import BadgeForm from "../components/BadgeForm.js"
 
-  handleChange = e => {
-    this.setState({
-      form: {
-        ...this.state.form,
-        [e.target.name]: e.target.value,
-      },
-    });
-  };
+import "./styles/BadgeEdit.css";
 
-  render() {
-    return (
-      <React.Fragment>
-        <div className="BadgeNew__hero">
-          <img className="img-fluid" src={header} alt="Logo" />
-        </div>
+import header from "../images/platziconf-logo.svg"
 
-        <div className="container">
-          <div className="row">
-            <div className="col-6">
-              <Badge
-                firstName={this.state.form.firstName}
-                lastName={this.state.form.lastName}
-                twitter={this.state.form.twitter}
-                jobTitle={this.state.form.jobTitle}
-                email={this.state.form.email}
-                avatarUrl="https://www.gravatar.com/avatar/21594ed15d68ace3965642162f8d2e84?d=identicon"
-              />
-            </div>
+import api from "../api.js"
 
-            <div className="col-6">
-              <BadgeForm
-                onChange={this.handleChange}
-                formValues={this.state.form}
-              />
-            </div>
-          </div>
-        </div>
-      </React.Fragment>
-    );
-  }
+import GravatarUrl from "../components/GravatarUrl.js"
+
+import PageLoading from "./PageLoading.js";
+
+
+class BadgeEdit extends Component {
+ 	
+ 	constructor(props) {
+
+ 		super(props);
+
+ 		this.state = {
+
+		form:{
+
+			email: "realDonaldTrump@gmail.com",
+			firstName: "Donald" ,
+			jobTitle: "President of USA",
+			lastName:"Trump",
+			twitter: "realDonaldTrump",
+			avatarUrl: ""
+		},
+		loading: false,
+		error: null
+		}
+
+ 	}
+
+
+	handleInputChange = async (event) => {
+	
+		await this.setState({
+
+			form: {
+					...this.state.form, //rewriting what was in the object
+			[event.target.name] : event.target.value,
+
+			avatarUrl: GravatarUrl(this.state.form.email)
+			}	,
+
+		});
+	}
+
+	handleBadgeFormSubmit = async (event) => {
+			event.preventDefault()
+			console.log("Form was submitted", this.state)
+
+				this.setState({
+					loading: true,
+					error: null
+				})
+
+			try {
+				await api.badges.create(this.state.form)
+				this.setState({
+					loading: false,
+				})
+
+				this.props.history.push("/badges")
+			}
+
+			catch(error) {
+				this.setState({
+					loading: false,
+					error: error
+				})
+			}
+	}
+
+
+
+	render() {
+
+		if(this.state.loading) {
+			return <PageLoading />
+		}
+
+			
+		return (
+		 
+			<section className="BadgeEdit">
+		
+				<section className="BadgeEdit__hero">
+
+					<img className="BadgeEdit__hero-header" src={header} alt="logo" />
+				</section>
+
+				<section className="BadgeEdit__content">
+
+					<Badge
+					 		firstName={this.state.form.firstName}
+					 		lastName={this.state.form.lastName}
+					 		jobTitle={this.state.form.jobTitle}
+					 		twitter={this.state.form.twitter}
+					 		email={this.state.form.email}
+					
+					 />
+
+					<BadgeForm 
+					title="New Attendant"
+						onSubmit={this.handleBadgeFormSubmit}
+						onChange={this.handleInputChange}
+						error= {this.state.error}
+					/>
+				</section>
+
+			</section>
+		);
+	}
 }
 
-export default BadgeNew;
+
+export default BadgeEdit;
+
