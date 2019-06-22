@@ -1,15 +1,48 @@
-import React, { Component } from 'react';
+import React, {  useState , useMemo } from 'react';
 import "./styles/BadgesList.css"
 import twitterLogo from "../images/Twitter_Logo_Blue.svg"
 import {Link} from "react-router-dom"
 
-class BadgesList extends Component {
+function useSearchBadges(badges) {
 
-	render() {
+	const [query, setQuery] = useState("")
+	const [filteredBadges, setFilteredBadges] = useState(badges)
 
-		if(this.props.badges.length === 0) {
+
+	useMemo( ()  => {
+		const result = badges.filter(
+
+			badge => (
+
+				// return badge.firstName === query
+			 `${badge.firstName} ${badge.lastName}`
+			 .toLowerCase()
+			 .includes(query.toLowerCase())
+			)
+		);		
+
+		setFilteredBadges(result)
+	}, [badges, query])
+
+	return {query, setQuery, filteredBadges}
+}
+
+
+function BadgesList(props) {
+
+	const {badges} = props;
+	const { query, setQuery, filteredBadges} = useSearchBadges(badges);
+
+	const handleChange = (event) => setQuery(event.target.value);
+
+
+		if(filteredBadges.length === 0) {
 			return (
 			  <section>
+			  	<form>
+						<label><h2> Filter Badges </h2> </label>
+						<input type="text" value={query} onChange={handleChange} />
+				</form>
 			  <h2>We didn't find any Badge :/</h2>
 			  <h3><i>But you can create the first now</i></h3>
 			  <br />
@@ -24,8 +57,13 @@ class BadgesList extends Component {
 							
 				<section className="Badges__container">
 					
+					<form>
+						<label><h2> Filter Badges </h2> </label>
+						<input type="text" value={query} onChange={handleChange} />
+					</form>
+
 					<ul>
-					{this.props.badges.map(
+					{filteredBadges.map(
 						
 						(badge) => (
 
@@ -71,7 +109,7 @@ class BadgesList extends Component {
 							</section>
 					</section>
 		);
-	}
+	
 }
 
 export default BadgesList

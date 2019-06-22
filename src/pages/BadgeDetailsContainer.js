@@ -17,7 +17,8 @@ import api from "../api.js";
  			loading: true,
  			error: null,
  			badgeId: this.props.match.params.badgeId,
- 			data: undefined
+ 			data: undefined,
+ 			modalIsOpen: false
  		}
  	}
 
@@ -37,6 +38,7 @@ import api from "../api.js";
  				error: null,
  				data: data
  			})
+
  		}
 
  		catch(error) {
@@ -45,6 +47,46 @@ import api from "../api.js";
  				loading: false,
  				error: error
  			})	
+ 		}
+ 	}
+
+ 	handleOpenModal = event => {
+ 		this.setState({
+ 			modalIsOpen: true
+ 		})
+ 	}
+
+ 	handleCloseModal = event => {
+  	this.setState({
+ 			modalIsOpen: false
+ 		})		
+ 	}
+
+ 	handleDeleteBadge = async event => {
+
+ 		this.setState({
+ 			loading: true,
+ 			error: null
+ 		})
+
+ 		try {
+ 			await api.badges.remove(this.state.badgeId);
+
+ 			this.setState({
+ 				loading: false,
+ 				error: null
+ 			})
+
+ 			
+ 			this.props.history.push("/badges")
+
+ 		}
+ 		catch(error) {
+
+ 			this.setState({
+ 				loading: false,
+ 				error: error
+ 			})
  		}
  	}
 
@@ -67,6 +109,10 @@ import api from "../api.js";
 
 	   <BadgeDetails
 			badge={this.state.data}
+			modalOnClose={this.handleCloseModal}
+			modalOnOpen={this.handleOpenModal}
+			modalIsOpen={this.state.modalIsOpen}
+			onDeleteBadge={this.handleDeleteBadge}
 	   /> 
 		)
 	}

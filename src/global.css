@@ -34,3 +34,8 @@ h1 {
 
 	border-radius: 5px;
 }
+
+.delete {
+	background-color: #ff0000;
+	border-color: #990000;
+}

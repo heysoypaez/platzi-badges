@@ -1,24 +1,6 @@
 {
   "badges": [
     {
-      "email": "donaldtrump@gmail.com",
-      "firstName": "Donald",
-      "jobTitle": "President of the USA",
-      "lastName": "Trump",
-      "twitter": "donaldtrump",
-      "id": 1,
-      "avatarUrl": "https://gravatar.com/avatar/7cf560e0dd620906adfe8b4b0efc583d=identicon"
-    },
-    {
-      "email": "danielpaezsw66@gmail.com",
-      "firstName": "Daniel",
-      "jobTitle": "Ethical Software Dev",
-      "lastName": "Páez",
-      "twitter": "heysoypaez",
-      "id": 2,
-      "avatarUrl": "https://gravatar.com/avatar/55b7e8b895d047537e672250dd781555=identicon"
-    },
-    {
       "firstName": "Richard",
       "lastName": "Kaufman",
       "email": "richardbkaufman@gmail.com",
@@ -46,15 +28,6 @@
       "avatarUrl": "https://www.gravatar.com/avatar/eec9b2ede8a775989ff71b5308ff52d7?d=identicon"
     },
     {
-      "id": 6,
-      "firstName": "Devin",
-      "lastName": "Bartell",
-      "email": "Dean80@hotmail.com",
-      "jobTitle": "National Mobility Administrator",
-      "twitter": "DevinBartell94456-3248",
-      "avatarUrl": "https://www.gravatar.com/avatar/714a712dc155ccc6b0d825dbc258ec0d?d=identicon"
-    },
-    {
       "email": "danielpaezsw66@gmail.com",
       "firstName": "Daniel",
       "jobTitle": "Ethical Software Developer",
@@ -64,12 +37,12 @@
       "id": 7
     },
     {
-      "email": "danielpaezsw66@gmail.com",
-      "firstName": "Daniel",
-      "jobTitle": "Ethical Software Developer",
-      "lastName": "Paez",
-      "twitter": "heysoypaez",
-      "avatarUrl": "https://gravatar.com/avatar/5201999281068f1d63445496fbccfe06=identicon",
+      "email": "sotobetsabet@gmail.com",
+      "firstName": "Betsabet",
+      "jobTitle": "Abogada",
+      "lastName": "Soto",
+      "twitter": "sotobetsabet",
+      "avatarUrl": "https://gravatar.com/avatar/be42c93a7bbd4e409801d7d8ffe5eb04=identicon",
       "id": 8
     }
   ]

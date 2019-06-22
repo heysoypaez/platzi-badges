@@ -56,7 +56,7 @@ constructor(props) {
 		this.fetchData();
 
 		//every 5 seconds executes this function
-		this.interval = setInterval(this.fetchData, (1000*5) )
+		this.interval = setInterval(this.fetchData, (1000*30) )
 	}
 
 	componentDidUpdate(prevProps, prevState) {
