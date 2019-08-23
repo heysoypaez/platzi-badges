@@ -12,6 +12,12 @@ module.exports = {
 		]
 	},
 	mode:"production",
+	optimization: {
+    minimizer: [
+    	new TerserPlugin(),
+    	new OptimizeCssAssetsPlugin()
+    ]
+  },
 
 	output: {
 		path: path.resolve( __dirname , "dist/" ),
